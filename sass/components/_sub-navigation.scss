@@ -1,0 +1,21 @@
+.navigation_list--link-nav {
+  .sub_nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    &--item {
+      font-weight: 400;
+      margin: 1rem;
+      transition: all 0.4s;
+
+      &:hover,
+      &:active {
+        color: $color_secondary;
+        font-weight: 600;
+      }
+    }
+  }
+}

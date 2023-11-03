@@ -1,0 +1,32 @@
+.foundations {
+  &_item {
+    &--icon {
+      height: 9.2rem;
+      width: 9.2rem;
+      background-color: rgba($color: $color_primary, $alpha: 0.3);
+      border-radius: 100%;
+      position: relative;
+    }
+    img {
+      height: 3.6rem;
+      width: 3.6rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--title {
+      margin-top: 1.6rem;
+      font-size: 3.2rem;
+      font-weight: 600;
+      color: $color_black;
+    }
+    &--description {
+      width: 47.5rem;
+      margin-top: 1.6rem;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: $color_black;
+    }
+  }
+}

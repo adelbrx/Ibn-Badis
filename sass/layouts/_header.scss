@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 9.6rem;
+  margin-right: 9.6rem;
+  margin-top: 3.2rem;
+  margin-bottom: 14.4rem;
+  animation-name: moveInTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+  transition: all 0.4s;
+
+  .logo img {
+    height: 6rem;
+    width: 6rem;
+
+    @media (max-width: 1100px) {
+      height: 3.6rem;
+      width: 3.6rem;
+    }
+  }
+  .navigation {
+    @include respond(big-desktop) {
+      font-size: 200%;
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 3.2rem;
+      list-style-type: none;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      margin-left: 25.6rem;
+
+      @media (max-width: 1300px) {
+        margin-left: 14.4rem;
+      }
+
+      &--link {
+        &-nav {
+          position: absolute;
+          top: 5rem;
+          border-radius: 4px;
+          background-color: $color_white;
+          color: $color_black;
+          padding: 1.6rem 2.4rem;
+          width: 18rem;
+          box-shadow: 0 0.4rem 10px rgba($color_black, 1);
+          transition: all 0.8s;
+        }
+      }
+      &--link:last-child {
+        margin-left: 22.4rem;
+
+        @media (max-width: 1100px) {
+          margin-left: 8.6rem;
+        }
+        @media (max-width: 930px) {
+          margin-left: 6.4rem;
+        }
+      }
+      &--link:nth-child(4) {
+        position: relative;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.section-registration {
+  margin: 0 9.2rem;
+  padding: 9.4rem 0;
+  border-radius: 32px;
+  background-image: linear-gradient(
+      to right,
+      rgba($color_primary, 0.7),
+      rgba($color_primary, 0.7)
+    ),
+    url(../../img/madrassa/call-to-action-background.png);
+  background-size: cover;
+  margin-bottom: 24rem;
+
+  .title {
+    text-align: center;
+    color: $color_white;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .sub-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: $color_white;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}

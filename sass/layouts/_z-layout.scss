@@ -1,0 +1,10 @@
+.row_container {
+  display: flex;
+  gap: 4.4rem;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 12rem;
+  }
+}

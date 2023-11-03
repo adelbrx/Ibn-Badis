@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "bases/animations";
+@import "bases/base";
+@import "bases/typography";
+@import "bases/utilities";
+
+@import "layouts/header";
+@import "layouts/section-hero";
+@import "layouts/section-who";
+@import "layouts/z-layout";
+@import "layouts/section-activities";
+@import "layouts/section-foundation";
+@import "layouts/section-registration";
+@import "layouts/footer";
+
+@import "components/buttons";
+@import "components/robot";
+@import "components/illustrations";
+@import "components/gallery";
+@import "components/foundation-card";
+@import "components/sub-navigation";

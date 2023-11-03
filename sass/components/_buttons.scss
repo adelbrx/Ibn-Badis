@@ -1,0 +1,127 @@
+.section-hero_main--btn {
+  font-size: 3.6rem;
+  width: 36rem;
+  height: 8rem;
+  color: $color_white;
+  background-image: linear-gradient(
+    to right bottom,
+    $color_secondary_dark,
+    $color_secondary
+  );
+  border-radius: 5.4rem;
+  border: none;
+  animation-name: moveInBottom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+
+  @media (max-width: 1450px) {
+    font-size: 2.6rem;
+    width: 32rem;
+    height: 6rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      color: $color_white;
+      background-image: linear-gradient(
+        to right bottom,
+        $color_secondary_dark,
+        $color_secondary
+      );
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color_black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}
+.btn_link--testimonials {
+  color: $color_primary;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-top: 4.4rem;
+  text-align: center;
+  transition: all 0.2s;
+  animation-name: moveInTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+  transition: all 0.4s;
+
+  &:hover {
+    color: $color_secondary_dark;
+    transform: translateY(-0.3rem);
+    cursor: pointer;
+  }
+}
+.registration-btn {
+  margin: 0 auto;
+  display: block;
+  background-color: $color_white;
+  color: $color_primary;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  width: 31.4rem;
+  height: 7.7rem;
+
+  &:hover,
+  &:active {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color_black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      color: $color_primary;
+      background-color: $color_white;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color_black, 0.2);
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}

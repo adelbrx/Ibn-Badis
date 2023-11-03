@@ -1,0 +1,62 @@
+.activities {
+  padding: 9.6rem 0;
+
+  &_content {
+    background-color: $color_tertiary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      margin-right: calc(#{$testimonials_gap} * 2);
+    }
+  }
+  &_list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: $testimonials_gap;
+
+    &--item {
+      font-size: 2.8rem;
+      font-weight: 600;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(9),
+      &:nth-child(10) {
+        color: rgba($color: $color_white, $alpha: 0.2);
+        transition: all 0.2s;
+
+        &:hover {
+          color: rgba($color: $color_secondary, $alpha: 0.2);
+          cursor: pointer;
+        }
+      }
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(7),
+      &:nth-child(8) {
+        color: rgba($color: $color_white, $alpha: 0.6);
+        transition: all 0.2s;
+
+        &:hover {
+          color: rgba($color: $color_secondary, $alpha: 0.6);
+          cursor: pointer;
+        }
+      }
+      &:nth-child(5),
+      &:nth-child(6) {
+        color: rgba($color: $color_white, $alpha: 1);
+        transition: all 0.2s;
+
+        &:hover {
+          color: rgba($color: $color_secondary, $alpha: 1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
