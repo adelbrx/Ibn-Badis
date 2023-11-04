@@ -3,9 +3,21 @@
     display: grid;
     row-gap: 9.6rem;
     column-gap: 32.8rem;
-    grid-template-columns: repeat(2, 50rem);
-    max-width: 127.8rem;
-    margin-top: 12.8rem;
-    margin-bottom: 12.8rem;
+    grid-template-columns: repeat(
+      2,
+      calc((100vw - 2 * (#{$foundations_margin_vertical})) / 2)
+    );
+    //max-width: 127.8rem;
+    margin: 12.8rem $foundations_margin_vertical;
+
+    @media (max-width: 112.5em) {
+      column-gap: 20rem;
+    }
+    @media (max-width: 100em) {
+      column-gap: 8rem;
+    }
+    @media (max-width: 68.75em) {
+      column-gap: 12rem;
+    }
   }
 }

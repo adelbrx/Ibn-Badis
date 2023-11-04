@@ -20,6 +20,9 @@
 
   <body>
     <img class="robot" src="img/madrassa/robot.png" alt="the assistant robot" />
+    <div class="dialog invisible">
+      <div class="dialog_chatbox"></div>
+    </div>
     <section class="section-hero">
       <header class="header">
         <a class="logo" href="#">
@@ -31,13 +34,31 @@
         <nav class="navigation">
           <ul class="navigation_list">
             <li class="navigation_list--link navigation_text" href="#">
-              إتصل بنا
+              <a
+                href="./waiting.html"
+                style="text-decoration: none"
+                class="navigation_text"
+              >
+                إتصل بنا
+              </a>
             </li>
             <li class="navigation_list--link navigation_text" href="#">
-              سجل للعام المقبل
+              <a
+                href="#registration"
+                style="text-decoration: none"
+                class="navigation_text"
+              >
+                سجل للعام المقبل
+              </a>
             </li>
             <li class="navigation_list--link navigation_text" href="#">
-              إشتري كتاب
+              <a
+                href="./waiting.html"
+                style="text-decoration: none"
+                class="navigation_text"
+              >
+                إشتري كتاب
+              </a>
             </li>
             <li
               class="navigation_list--link list navigation_text"
@@ -47,10 +68,42 @@
               ⌄ مدرستي
               <div class="navigation_list--link-nav invisible" dir="rtl">
                 <ul class="sub_nav" dir="rtl">
-                  <li class="sub_nav--item" dir="rtl">جدول الحصص</li>
-                  <li class="sub_nav--item" dir="rtl">مناسبات</li>
-                  <li class="sub_nav--item" dir="rtl">بنين و بنات</li>
-                  <li class="sub_nav--item" dir="rtl">المقرأ</li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="./waiting.html"
+                      style="text-decoration: none"
+                      class="sub_nav--item"
+                    >
+                      جدول الحصص
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="#activities"
+                      style="text-decoration: none"
+                      class="sub_nav--item"
+                    >
+                      مناسبات
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="./waiting.html"
+                      style="text-decoration: none"
+                      class="sub_nav--item"
+                    >
+                      بنين و بنات
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="./waiting.html"
+                      style="text-decoration: none"
+                      class="sub_nav--item"
+                    >
+                      المقرأ
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -58,7 +111,13 @@
               الرئيسية
             </li>
             <li class="navigation_list--link navigation_text" href="#">
-              تسجيل الدخول
+              <a
+                href="https://eremote.ibnbadis.ch/wp-login.php"
+                style="text-decoration: none"
+                class="navigation_text"
+              >
+                تسجيل الدخول
+              </a>
             </li>
           </ul>
         </nav>
@@ -71,10 +130,12 @@
           تعلم اللغة العربية في مدرستك عن بعد بأحدث الوسائل المنهجية و التقنية
           عبر مناهج تفاعلية
         </p>
-        <button class="section-hero_main--btn">مزيد من المعلومات</button>
+        <a href="#who" style="text-decoration: none; color: #fff">
+          <button class="section-hero_main--btn">مزيد من المعلومات</button>
+        </a>
       </main>
     </section>
-    <section class="section-who" dir="rtl">
+    <section class="section-who" dir="rtl" id="who">
       <div class="container">
         <span class="sub_heading_primary">من نحن ؟</span>
         <h2 class="heading_primary">
@@ -9197,7 +9258,7 @@
       </div>
     </section>
 
-    <section class="activities" dir="rtl">
+    <section class="activities" dir="rtl" id="activities">
       <div class="container">
         <span class="sub_heading_primary sides_margin">أنشطتنا</span>
         <h2 class="heading_primary sides_margin sides_margin--1">
@@ -9276,7 +9337,11 @@
           </figure>
         </div>
       </div>
-      <p class="btn_link--testimonials">المزيد من النشاطات</p>
+      <p class="btn_link--testimonials" href="./waiting.html">
+        <a href="./waiting.html" class="btn_link--testimonials">
+          المزيد من النشاطات
+        </a>
+      </p>
     </section>
     <section class="section-foundation" dir="rtl">
       <div class="container">
@@ -9285,7 +9350,7 @@
           الأسس التي تعتمد عليها المدرسة هي أربعة
         </h2>
       </div>
-      <div class="foundations sides_margin">
+      <div class="foundations">
         <div class="foundations_item">
           <figure class="foundations_item--icon">
             <img
@@ -9338,12 +9403,17 @@
         </div>
       </div>
     </section>
-    <section class="section-registration">
+    <section class="section-registration" id="registration">
       <h1 class="title">سجــل للعـام المقبــل</h1>
       <h5 class="sub-title">
         لا تفوت الفرصة سجل الآن و إحجز مقعدا للسنة القادمة
       </h5>
-      <button class="registration-btn">سجل الآن</button>
+      <button
+        class="registration-btn"
+        onclick="window.location.href='./waiting.html'"
+      >
+        سجل الآن
+      </button>
     </section>
     <footer dir="rtl">
       <ul class="contacts">
@@ -9374,8 +9444,22 @@
       </ul>
       <ul class="accounts">
         <li class="accounts_item">حسابات</li>
-        <li class="accounts_item">إنشاء حساب</li>
-        <li class="accounts_item">تسجيل الدخول</li>
+        <li class="accounts_item">
+          <a
+            href="https://eremote.ibnbadis.ch/wp-login.php"
+            class="accounts_item--link"
+          >
+            إنشاء حساب
+          </a>
+        </li>
+        <li class="accounts_item">
+          <a
+            href="https://eremote.ibnbadis.ch/wp-login.php"
+            class="accounts_item--link"
+          >
+            تسجيل الدخول
+          </a>
+        </li>
       </ul>
       <div class="apps">
         <figure class="icon">
@@ -9391,10 +9475,16 @@
         </h1>
         <div class="apps_btns">
           <figure class="android">
-            <img src="./img/android-app.png" alt="logo ibn badis" />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.moobin.ibs&hl=zu&gl=US"
+            >
+              <img src="./img/android-app.png" alt="logo ibn badis" />
+            </a>
           </figure>
           <figure class="ios">
-            <img src="./img/ios-app.png" alt="logo ibn badis" />
+            <a href="https://apps.apple.com/be/app/moobin/id6464114888?l=fr-FR">
+              <img src="./img/ios-app.png" alt="logo ibn badis" />
+            </a>
           </figure>
         </div>
       </div>

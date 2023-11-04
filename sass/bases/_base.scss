@@ -12,6 +12,10 @@ html {
   font-family: "Noto Kufi Arabic", sans-serif;
   position: relative;
 
+  body {
+    width: 100vw;
+  }
+
   @include respond(big-desktop) {
     font-size: 75%;
   }

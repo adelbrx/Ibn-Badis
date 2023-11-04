@@ -9,6 +9,13 @@ footer {
     color: $color_white;
     list-style-type: none;
 
+    @media (max-width: 1400px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1rem;
+    }
     &_item {
       display: flex;
       align-items: center;
@@ -34,10 +41,22 @@ footer {
   .accounts {
     font-size: 1.8rem;
     color: $color_white;
+
+    @media (max-width: 1400px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1rem;
+    }
     &_item {
       margin-bottom: 1rem;
       font-weight: 400;
       list-style-type: none;
+      &--link {
+        color: $color_white;
+        text-decoration: none;
+      }
       &:first-child {
         font-weight: 900;
         margin-bottom: 2.8rem;
@@ -57,12 +76,30 @@ footer {
       img {
         height: 8rem;
         width: 11.5rem;
+
+        @media (max-width: 1400px) {
+          height: 4rem;
+          width: 8rem;
+        }
+
+        @media (max-width: 900px) {
+          height: 2rem;
+          width: 4rem;
+        }
       }
     }
     .description {
       font-size: 2rem;
       color: $color_white;
       font-weight: 400;
+
+      @media (max-width: 1400px) {
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 900px) {
+        font-size: 1rem;
+      }
     }
 
     &_btns {
@@ -78,6 +115,16 @@ footer {
         img {
           height: 6.4rem;
           width: 21rem;
+
+          @media (max-width: 1400px) {
+            height: 4rem;
+            width: 12rem;
+          }
+
+          @media (max-width: 900px) {
+            height: 2rem;
+            width: 6rem;
+          }
         }
       }
       .ios {
@@ -86,6 +133,16 @@ footer {
         img {
           height: 6.4rem;
           width: 21rem;
+
+          @media (max-width: 1400px) {
+            height: 4rem;
+            width: 12rem;
+          }
+
+          @media (max-width: 900px) {
+            height: 2rem;
+            width: 6rem;
+          }
         }
       }
     }
