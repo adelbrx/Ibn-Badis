@@ -660,6 +660,42 @@ footer {
     z-index: -1;
     transition: all 0.4s; }
 
+.registration-btn--green {
+  display: block;
+  background-color: #115e59;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  padding: 2rem 3.2rem;
+  margin-top: 4.4rem;
+  width: 100%; }
+  .registration-btn--green:hover, .registration-btn--green:active {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(31, 41, 55, 0.2); }
+    .registration-btn--green:hover::after, .registration-btn--green:active::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      color: #fff;
+      background-color: #115e59; }
+  .registration-btn--green:active, .registration-btn--green:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(31, 41, 55, 0.2); }
+  .registration-btn--green::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s; }
+
 .robot {
   width: 9.2rem;
   height: 13.5rem;
@@ -828,6 +864,12 @@ footer {
     border-radius: 12px;
     z-index: 99;
     transition: all 0.8s; }
+    .dialog_chatbox--exit {
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0; }
 
 .btn-mobile-nav {
   border: none;
@@ -843,6 +885,82 @@ footer {
 
 .icon-mobile-nav[name="close-outline"] {
   display: none; }
+
+.registration_page {
+  background-color: rgba(31, 41, 55, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .registration_page--exit {
+    height: 100vh;
+    width: 100vw;
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.registration_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.7);
+  height: 90vh;
+  width: 70vw;
+  border-radius: 12px;
+  z-index: 99;
+  transition: all 0.8s;
+  padding-top: 3.2rem;
+  padding-bottom: 8.6rem;
+  overflow: scroll; }
+  .registration_form--title {
+    font-size: 4rem;
+    color: #115e59; }
+  .registration_form--items {
+    padding-top: 9.6rem;
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 21rem;
+    grid-template-columns: repeat(2, 1fr); }
+
+.input_label {
+  font-size: 1.8rem;
+  color: #1f2937; }
+
+.input_content {
+  margin-top: 0.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: flex-end; }
+  .input_content--item {
+    border-radius: 4px;
+    background-color: #f3f4f6;
+    border: none;
+    padding: 2.4rem 3.2rem;
+    padding-right: 7rem; }
+    .input_content--item::placeholder {
+      color: rgba(31, 41, 55, 0.5);
+      font-size: 1.4rem; }
+    .input_content--item:focus, .input_content--item:active {
+      outline: 2px solid #115e59;
+      box-shadow: 0 0 8px #115e59; }
+  .input_content--icon {
+    position: absolute;
+    top: 2.4rem;
+    right: 3.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    transform: translateY(-25%); }
 
 .waiting {
   margin: auto 0;

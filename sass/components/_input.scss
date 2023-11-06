@@ -1,0 +1,44 @@
+.input {
+  &_label {
+    font-size: 1.8rem;
+    color: $color_black;
+  }
+  &_content {
+    margin-top: 0.8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    &--item {
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      border-radius: 4px;
+      background-color: $color_grey_light;
+      border: none;
+      padding: 2.4rem 3.2rem;
+      padding-right: 7rem;
+      &::placeholder {
+        color: rgba($color: $color_black, $alpha: 0.5);
+        font-size: 1.4rem;
+      }
+      &:focus,
+      &:active {
+        outline: 2px solid $color_primary;
+        box-shadow: 0 0 8px $color_primary;
+      }
+    }
+
+    &--icon {
+      position: absolute;
+      top: 2.4rem;
+      right: 3.2rem;
+      height: 2.2rem;
+      width: 2.2rem;
+      transform: translateY(-25%);
+    }
+  }
+}

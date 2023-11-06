@@ -20,7 +20,7 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.open("./waiting.html", "_self");
+      window.open(href, "_self");
     }
   });
 });
@@ -64,8 +64,35 @@ function display_chatbox() {
   document.querySelector(".robot").addEventListener("click", () => {
     document.querySelector(".dialog").classList.toggle("invisible");
   });
+
+  document
+    .querySelector(".dialog_chatbox--exit")
+    .addEventListener("click", () => {
+      document.querySelector(".dialog").classList.add("invisible");
+    });
 }
 
 display_chatbox();
 
-///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//registration form button
+function hide_form() {
+  let form = document.querySelector(".registration_page--exit");
+  form.addEventListener("click", () => {
+    document.querySelector(".registration_page").classList.add("invisible");
+  });
+}
+
+document
+  .querySelector(".registration-btn--green")
+  .addEventListener("click", () => {
+    document.querySelector(".registration_page").classList.add("invisible");
+  });
+
+document.querySelector(".registration-btn").addEventListener("click", () => {
+  document.querySelector(".registration_page").classList.remove("invisible");
+});
+
+hide_form();
+
+///////////////////////////////////////////////////////////////////
