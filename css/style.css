@@ -696,6 +696,95 @@ footer {
     z-index: -1;
     transition: all 0.4s; }
 
+.contact-us_btn {
+  position: absolute;
+  top: 6.4rem;
+  right: 4.4rem;
+  background-color: #9f1239;
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 1.2rem #fff; }
+  .contact-us_btn:hover, .contact-us_btn:active {
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); }
+    .contact-us_btn:hover::after, .contact-us_btn:active::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      color: #fff;
+      background-color: #be123c; }
+  .contact-us_btn:active, .contact-us_btn:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
+  .contact-us_btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s; }
+
+.btn_send {
+  background-image: linear-gradient(to right, #be123c, #9f1239);
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  width: 24rem;
+  height: 5.6rem;
+  position: absolute;
+  left: 0; }
+  .btn_send:hover, .btn_send:active {
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(31, 41, 55, 0.2); }
+    .btn_send:hover::after, .btn_send:active::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+      color: #fff;
+      background-color: #be123c; }
+  .btn_send:active, .btn_send:focus {
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(31, 41, 55, 0.2); }
+  .btn_send::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s; }
+
+.btn_back {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #1f2937;
+  transition: all 0.2s;
+  text-decoration: none;
+  animation-name: moveInTop;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+  transition: all 0.4s; }
+  .btn_back:hover {
+    color: #115e59;
+    transform: translateY(-0.3rem);
+    cursor: pointer; }
+
 .robot {
   width: 9.2rem;
   height: 13.5rem;
@@ -962,9 +1051,63 @@ footer {
     width: 2.2rem;
     transform: translateY(-25%); }
 
+.contact-us_form {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  background-color: #fff;
+  z-index: 12;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+  padding: 0 8rem;
+  overflow: hidden; }
+  .contact-us_form--title {
+    margin-top: 8rem;
+    font-size: 2.4rem;
+    font-weight: 400; }
+  .contact-us_form--content {
+    margin-top: 8rem;
+    margin-bottom: 14.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5.2rem; }
+    .contact-us_form--content-item .item_input {
+      padding: 1.6rem 0;
+      width: 25vw;
+      border: none;
+      border-bottom: 2px solid #1f2937;
+      font-size: 1.6rem; }
+      .contact-us_form--content-item .item_input::placeholder {
+        color: #1f2937;
+        opacity: 1;
+        font-size: 1.6rem; }
+      .contact-us_form--content-item .item_input:focus, .contact-us_form--content-item .item_input:active {
+        outline: none; }
+  .contact-us_form--buttons {
+    margin-bottom: 10.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
 .waiting {
   margin: auto 0;
   font-size: 10rem;
   color: #1f2937;
   text-align: center;
   font-weight: 400; }
+
+.contact-us {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../img/madrassa/map.png);
+  background-size: cover;
+  position: relative; }
+  .contact-us_btn--content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; }
+    .contact-us_btn--content img {
+      height: 1.6rem;
+      width: 1.4rem; }

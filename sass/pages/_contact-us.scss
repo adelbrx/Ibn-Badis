@@ -1,0 +1,19 @@
+.contact-us {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../img/madrassa/map.png);
+  background-size: cover;
+  position: relative;
+
+  &_btn--content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 1.6rem;
+      width: 1.4rem;
+    }
+  }
+}
