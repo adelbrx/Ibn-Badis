@@ -1,0 +1,52 @@
+.section-schedule {
+  height: 100vh;
+  width: 100vw;
+
+  .navigationSchedule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
+
+    &_items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-direction: row;
+    }
+
+    &_item {
+      padding: 1.8rem 6.4rem;
+      width: 23rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      &--icon {
+        height: 2.2rem;
+        width: 1.8rem;
+        opacity: 50%;
+
+        // &:nth-child(1) {
+        //   opacity: 100%;
+        // }
+      }
+
+      &--text {
+        font-size: 1.6rem;
+        color: rgba($color_grey_dark, 0.5);
+        font-weight: 600;
+
+        // &:nth-child(2) {
+        //   color: rgba($color_grey_dark, 1);
+        // }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

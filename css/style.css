@@ -200,6 +200,16 @@ html {
   pointer-events: none;
   visibility: hidden; }
 
+.black {
+  color: #042f2e; }
+
+.focus {
+  color: #115e59;
+  border-bottom: 0.5rem solid #115e59; }
+
+.noMargin_bottom {
+  margin-bottom: 0; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -222,6 +232,17 @@ html {
   @media (max-width: 1100px) {
     .header {
       margin-bottom: 4.4rem; } }
+  .header_noMargin {
+    margin-bottom: 0; }
+    @media (max-width: 2100px) {
+      .header_noMargin {
+        margin-bottom: 0; } }
+    @media (max-width: 1450px) {
+      .header_noMargin {
+        margin-bottom: 0; } }
+    @media (max-width: 1100px) {
+      .header_noMargin {
+        margin-bottom: 0; } }
   .header .logo img {
     height: 6rem;
     width: 6rem; }
@@ -419,6 +440,38 @@ html {
     @media (max-width: 1200px) {
       .section-registration .sub-title {
         font-size: 1.4rem; } }
+
+.section-schedule {
+  height: 100vh;
+  width: 100vw; }
+  .section-schedule .navigationSchedule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem; }
+    .section-schedule .navigationSchedule_items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-direction: row; }
+    .section-schedule .navigationSchedule_item {
+      padding: 1.8rem 6.4rem;
+      width: 23rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem; }
+      .section-schedule .navigationSchedule_item--icon {
+        height: 2.2rem;
+        width: 1.8rem;
+        opacity: 50%; }
+      .section-schedule .navigationSchedule_item--text {
+        font-size: 1.6rem;
+        color: rgba(69, 90, 100, 0.5);
+        font-weight: 600; }
+      .section-schedule .navigationSchedule_item:hover {
+        cursor: pointer; }
 
 footer {
   display: flex;
@@ -1050,6 +1103,43 @@ footer {
     height: 2.2rem;
     width: 2.2rem;
     transform: translateY(-25%); }
+
+table {
+  margin: 0 auto;
+  margin-top: 8.4rem;
+  border: 0;
+  border-style: none;
+  border-collapse: collapse; }
+  table thead th {
+    width: 15rem;
+    height: 5.6rem;
+    background-color: #fecdd3;
+    color: #1f2937;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600; }
+    table thead th:first-child, table thead th:nth-child(3), table thead th:nth-child(5), table thead th:nth-child(7), table thead th:nth-child(9) {
+      background-color: #fff; }
+    table thead th:first-child {
+      width: 23rem; }
+  table tbody tr th {
+    background-color: #f3f4f6;
+    width: 23rem;
+    height: 5.6rem;
+    color: #455a64;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600; }
+  table tbody tr td {
+    width: 15rem;
+    height: 5.6rem;
+    background-color: #fecdd3;
+    color: #1f2937;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400; }
+    table tbody tr td:nth-child(3), table tbody tr td:nth-child(5), table tbody tr td:nth-child(7), table tbody tr td:nth-child(9) {
+      background-color: #fff; }
 
 .contact-us_form {
   position: fixed;

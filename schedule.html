@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="img/madrassa/ibs_icon_white_no_writed.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img class="robot" src="img/madrassa/robot.png" alt="the assistant robot" />
+    <div class="dialog invisible">
+      <div class="dialog_chatbox--exit"></div>
+      <div class="dialog_chatbox"></div>
+    </div>
+    <main class="section-schedule">
+      <header class="header header_noMargin">
+        <a class="logo" href="#">
+          <img src="img/madrassa/ibs_icon_no_writed.png" alt="Ibn Badis Logo" />
+        </a>
+        <nav class="navigation">
+          <ul class="navigation_list">
+            <li class="navigation_list--link navigation_text" href="#">
+              <a
+                href="./contact-us.html"
+                style="text-decoration: none"
+                class="navigation_text black"
+              >
+                إتصل بنا
+              </a>
+            </li>
+            <li class="navigation_list--link navigation_text" href="#">
+              <a
+                href="#registration"
+                style="text-decoration: none"
+                class="navigation_text black"
+              >
+                سجل للعام المقبل
+              </a>
+            </li>
+            <li class="navigation_list--link navigation_text" href="#">
+              <a
+                href="./waiting.html"
+                style="text-decoration: none"
+                class="navigation_text black"
+              >
+                إشتري كتاب
+              </a>
+            </li>
+            <li
+              class="navigation_list--link list navigation_text black"
+              href="#"
+              dir="rtl"
+            >
+              ⌄ مدرستي
+              <div class="navigation_list--link-nav invisible" dir="rtl">
+                <ul class="sub_nav" dir="rtl">
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="#"
+                      style="text-decoration: none"
+                      class="sub_nav--item black"
+                    >
+                      جدول الحصص
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="#activities"
+                      style="text-decoration: none"
+                      class="sub_nav--item black"
+                    >
+                      مناسبات
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="./waiting.html"
+                      style="text-decoration: none"
+                      class="sub_nav--item black"
+                    >
+                      بنين و بنات
+                    </a>
+                  </li>
+                  <li class="sub_nav--item" dir="rtl">
+                    <a
+                      href="./waiting.html"
+                      style="text-decoration: none"
+                      class="sub_nav--item black"
+                    >
+                      المقرأ
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation_list--link navigation_text black">
+              <a
+                href="./home.html"
+                style="text-decoration: none"
+                class="sub_nav--item black"
+              >
+                الرئيسية
+              </a>
+            </li>
+            <li class="navigation_list--link navigation_text black" href="#">
+              <a
+                href="https://eremote.ibnbadis.ch/wp-login.php"
+                style="text-decoration: none"
+                class="navigation_text black"
+              >
+                تسجيل الدخول
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="navigationSchedule" dir="rtl">
+        <div class="navigationSchedule_items">
+          <div class="navigationSchedule_item focus">
+            <img
+              src="./img/icons/open-book_focus.png"
+              alt="school icon"
+              class="navigationSchedule_item--icon"
+            />
+            <h3 class="navigationSchedule_item--text">الدراسة</h3>
+          </div>
+          <div class="navigationSchedule_item">
+            <img
+              src="./img/icons/beach-umbrella.png"
+              alt="hollidays icon"
+              class="navigationSchedule_item--icon"
+            />
+            <h3 class="navigationSchedule_item--text">العطل</h3>
+          </div>
+        </div>
+      </nav>
+
+      <table border="0">
+        <thead>
+          <tr>
+            <th></th>
+            <th>10:00 - 10:30</th>
+            <th>10:30 - 11:00</th>
+            <th>11:00 - 11:30</th>
+            <th>11:30 - 12:00</th>
+            <th>12:00 - 12:30</th>
+            <th>12:30 - 13:00</th>
+            <th>13:00 - 13:30</th>
+            <th>13:30 - 14:00</th>
+            <th>14:00 - 14:30</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>المبتدئين</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>الأول</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>الثاني</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>الثالث</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>الرابع</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>الخامس</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+          <tr>
+            <th>السادس</th>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+            <td>إسم الدرس</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer dir="rtl">
+      <ul class="contacts">
+        <li class="contacts_item">
+          <p class="contacts_item--text">جهات الاتصال</p>
+        </li>
+        <li class="contacts_item">
+          <figure class="contacts_item--icon">
+            <img
+              src="./img/icons/information_icon.png"
+              alt="inofrmations icon"
+            />
+          </figure>
+          <p class="contacts_item--text">support@ibnbadis.ch</p>
+        </li>
+        <li class="contacts_item">
+          <figure class="contacts_item--icon">
+            <img src="./img/icons/email.png" alt="email icon" />
+          </figure>
+          <p class="contacts_item--text">info@ibnbadis.ch</p>
+        </li>
+        <li class="contacts_item">
+          <figure class="contacts_item--icon">
+            <img src="./img/icons/position_icon.png" alt="position icon" />
+          </figure>
+          <p class="contacts_item--text">regensdorf, switzerland</p>
+        </li>
+      </ul>
+      <ul class="accounts">
+        <li class="accounts_item">حسابات</li>
+        <li class="accounts_item">
+          <a
+            href="https://eremote.ibnbadis.ch/wp-login.php"
+            class="accounts_item--link"
+          >
+            إنشاء حساب
+          </a>
+        </li>
+        <li class="accounts_item">
+          <a
+            href="https://eremote.ibnbadis.ch/wp-login.php"
+            class="accounts_item--link"
+          >
+            تسجيل الدخول
+          </a>
+        </li>
+      </ul>
+      <div class="apps">
+        <figure class="icon">
+          <a href="#">
+            <img
+              src="./img/madrassa/ibs_icon_white_no_writed.png"
+              alt="logo ibn badis"
+            />
+          </a>
+        </figure>
+        <h1 class="description">
+          متوفر
+          <span style="font-weight: 900">تطبيق</span>
+          على الهاتف
+        </h1>
+        <div class="apps_btns">
+          <figure class="android">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.moobin.ibs&hl=zu&gl=US"
+            >
+              <img src="./img/android-app.png" alt="logo ibn badis" />
+            </a>
+          </figure>
+          <figure class="ios">
+            <a href="https://apps.apple.com/be/app/moobin/id6464114888?l=fr-FR">
+              <img src="./img/ios-app.png" alt="logo ibn badis" />
+            </a>
+          </figure>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/schedule.js"></script>
+  </body>
+</html>
