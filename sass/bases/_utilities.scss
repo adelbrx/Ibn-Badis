@@ -13,3 +13,14 @@
   pointer-events: none;
   visibility: hidden;
 }
+.black {
+  color: $color_primary_dark;
+}
+.focus {
+  color: $color_primary;
+  border-bottom: 0.5rem solid $color_primary;
+}
+
+.noMargin_bottom {
+  margin-bottom: 0;
+}
