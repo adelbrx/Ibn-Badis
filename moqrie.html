@@ -23,7 +23,7 @@
       <div class="dialog_chatbox--exit"></div>
       <div class="dialog_chatbox"></div>
     </div>
-    <main class="section-schedule">
+    <main class="section-presentation">
       <header class="header header_noMargin">
         <a class="logo" href="./home.html">
           <img src="img/madrassa/ibs_icon_no_writed.png" alt="Ibn Badis Logo" />
@@ -67,7 +67,7 @@
                 <ul class="sub_nav" dir="rtl">
                   <li class="sub_nav--item" dir="rtl">
                     <a
-                      href="#"
+                      href="./schedule.html"
                       style="text-decoration: none"
                       class="sub_nav--item black"
                     >
@@ -94,7 +94,7 @@
                   </li>
                   <li class="sub_nav--item" dir="rtl">
                     <a
-                      href="./moqrie.html"
+                      href="#"
                       style="text-decoration: none"
                       class="sub_nav--item black"
                     >
@@ -125,129 +125,99 @@
           </ul>
         </nav>
       </header>
-      <nav class="navigationSchedule" dir="rtl">
-        <div class="navigationSchedule_items">
-          <div class="navigationSchedule_item focus">
-            <img
-              src="./img/icons/open-book_focus.png"
-              alt="school icon"
-              class="navigationSchedule_item--icon"
-            />
-            <h3 class="navigationSchedule_item--text">الدراسة</h3>
+
+      <div class="sectionPresentation_content">
+        <div class="sectionPresentation_content--left">
+          <img src="img/madrassa/coran.png" alt="library picture" />
+        </div>
+        <div
+          class="sectionPresentation_content--right"
+          dir="rtl"
+          style="position: relative"
+        >
+          <h1 class="presentation_title">المقرأ</h1>
+          <div class="inputs">
+            <div class="moqrie_form--items">
+              <div class="inputs_item">
+                <label for="name" class="input_label">إسم المقرأ</label>
+                <div class="input_content">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="اسلام صبحي"
+                    class="input_content--item"
+                  />
+                </div>
+              </div>
+              <div class="inputs_item">
+                <label for="family name" class="input_label">إسم السورة</label>
+                <div class="input_content">
+                  <input
+                    type="text"
+                    name="family name"
+                    placeholder="الرحمان"
+                    class="input_content--item"
+                  />
+                </div>
+              </div>
+              <div class="inputs_item">
+                <label for="birth day" class="input_label">من الآية</label>
+                <div class="input_content">
+                  <input
+                    type="text"
+                    name="birth day"
+                    placeholder="1"
+                    class="input_content--item"
+                  />
+                </div>
+              </div>
+              <div class="inputs_item">
+                <label for="sexe" class="input_label">إلى الآية</label>
+                <div class="input_content">
+                  <input
+                    type="text"
+                    name="sexe"
+                    placeholder="13"
+                    class="input_content--item"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="navigationSchedule_item">
-            <img
-              src="./img/icons/beach-umbrella.png"
-              alt="hollidays icon"
-              class="navigationSchedule_item--icon"
-            />
-            <h3 class="navigationSchedule_item--text">العطل</h3>
+          <div class="player" dir="rtl">
+            <div class="first_part" dir="rtl">
+              <img
+                src="./img/icons/monter-le-son.png"
+                alt="play button"
+                class="btn_sound"
+              />
+              <img
+                src="./img/icons/Polygon 1.png"
+                alt="play button"
+                class="btn_play"
+              />
+              <img
+                src="./img/icons/loop.png"
+                alt="play button"
+                class="btn_loop"
+              />
+            </div>
+            <div class="second_part" dir="rtl">
+              <h6>03:45</h6>
+              <div class="line" dir="ltr">
+                <div class="line_grey">
+                  <div class="line_red">
+                    <div class="line_red--line" dir="rtl">
+                      <div class="line_red--circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6>02:10</h6>
+            </div>
           </div>
         </div>
-      </nav>
-
-      <table border="0">
-        <thead>
-          <tr>
-            <th></th>
-            <th>10:00 - 10:30</th>
-            <th>10:30 - 11:00</th>
-            <th>11:00 - 11:30</th>
-            <th>11:30 - 12:00</th>
-            <th>12:00 - 12:30</th>
-            <th>12:30 - 13:00</th>
-            <th>13:00 - 13:30</th>
-            <th>13:30 - 14:00</th>
-            <th>14:00 - 14:30</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>المبتدئين</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>الأول</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>الثاني</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>الثالث</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>الرابع</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>الخامس</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-          <tr>
-            <th>السادس</th>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-            <td>إسم الدرس</td>
-          </tr>
-        </tbody>
-      </table>
+      </div>
     </main>
     <footer dir="rtl">
       <ul class="contacts">
@@ -325,6 +295,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/schedule.js"></script>
+    <script src="./js/dar-al-kotob.js"></script>
   </body>
 </html>

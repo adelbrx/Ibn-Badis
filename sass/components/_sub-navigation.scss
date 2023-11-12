@@ -5,6 +5,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    z-index: 100000;
 
     &--item {
       font-weight: 400;

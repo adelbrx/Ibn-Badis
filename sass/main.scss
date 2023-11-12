@@ -2,6 +2,19 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "components/buttons";
+@import "components/robot";
+@import "components/illustrations";
+@import "components/gallery";
+@import "components/foundation-card";
+@import "components/sub-navigation";
+@import "components/dialog";
+@import "components/mobile-nav";
+@import "components/registration-form";
+@import "components/input";
+@import "components/table";
+@import "components/contact-us-form";
+
 @import "bases/animations";
 @import "bases/base";
 @import "bases/typography";
@@ -15,20 +28,9 @@
 @import "layouts/section-foundation";
 @import "layouts/section-registration";
 @import "layouts/section-schedule";
+@import "layouts/section-presentation";
 @import "layouts/footer";
-
-@import "components/buttons";
-@import "components/robot";
-@import "components/illustrations";
-@import "components/gallery";
-@import "components/foundation-card";
-@import "components/sub-navigation";
-@import "components/dialog";
-@import "components/mobile-nav";
-@import "components/registration-form";
-@import "components/input";
-@import "components/table";
-@import "components/contact-us-form";
+@import "layouts/section-moqrie";
 
 @import "pages/waiting-page";
 @import "pages/contact-us";
