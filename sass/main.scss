@@ -36,6 +36,8 @@
 @import "pages/contact-us";
 
 //RESPONSIVITY
+@import "responsivity/pages/contact-us";
+
 @import "responsivity/layouts/header";
 @import "responsivity/layouts/section-hero";
 @import "responsivity/layouts/section-who";
@@ -55,3 +57,4 @@
 @import "responsivity/components/foundation-card";
 @import "responsivity/components/registration-form";
 @import "responsivity/components/input";
+@import "responsivity/components/contact-us-form";
