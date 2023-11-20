@@ -21,16 +21,6 @@
     flex-direction: column;
     margin-bottom: 14.4rem;
 
-    @media (max-width: 131.25em) {
-      gap: 3.6rem;
-    }
-    @media (max-width: 90.625em) {
-      gap: 2.8rem;
-    }
-    @media (max-width: 68.75em) {
-      gap: 1.6rem;
-    }
-
     &--title {
       animation-name: moveInLeft;
       animation-duration: 0.5s;
@@ -51,16 +41,6 @@
       animation-fill-mode: backwards;
       transition: all 0.4s;
       margin-bottom: 4.4rem;
-
-      @media (max-width: 131.25em) {
-        width: 64rem;
-      }
-      @media (max-width: 90.625em) {
-        width: 56rem;
-      }
-      @media (max-width: 68.75em) {
-        width: 44rem;
-      }
     }
   }
 }

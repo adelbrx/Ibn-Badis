@@ -1,0 +1,77 @@
+@media (max-width: 900px) {
+  .section-foundation {
+    .foundations {
+      grid-template-columns: calc(
+        (100vw - 2 * (#{$foundations_margin_vertical})) / 2
+      );
+    }
+  }
+}
+@media (max-width: 700px) {
+  .section-foundation {
+    .foundations {
+      margin: 15vw;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 14rem;
+      column-gap: 9.6rem;
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 14rem;
+      column-gap: 12rem;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 14rem;
+      column-gap: 12.4rem;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 16.4rem;
+      column-gap: 15rem;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 16.4rem;
+      column-gap: 32.8rem;
+    }
+  }
+}
+
+@media (min-width: 2400px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 22.4rem;
+    }
+  }
+}
+
+@media (min-width: 2800px) {
+  .section-foundation {
+    .foundations {
+      row-gap: 24.8rem;
+    }
+  }
+}

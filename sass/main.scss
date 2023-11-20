@@ -34,3 +34,24 @@
 
 @import "pages/waiting-page";
 @import "pages/contact-us";
+
+//RESPONSIVITY
+@import "responsivity/layouts/header";
+@import "responsivity/layouts/section-hero";
+@import "responsivity/layouts/section-who";
+@import "responsivity/layouts/z-layout";
+@import "responsivity/layouts/section-activities";
+@import "responsivity/layouts/section-foundation";
+@import "responsivity/layouts/section-registration";
+@import "responsivity/layouts/footer";
+
+@import "responsivity/bases/typography";
+@import "responsivity/bases/utilities";
+
+@import "responsivity/components/buttons";
+@import "responsivity/components/robot";
+@import "responsivity/components/illustrations";
+@import "responsivity/components/gallery";
+@import "responsivity/components/foundation-card";
+@import "responsivity/components/registration-form";
+@import "responsivity/components/input";

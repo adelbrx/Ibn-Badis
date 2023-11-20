@@ -16,22 +16,6 @@
   animation-delay: 0.75s;
   animation-fill-mode: backwards;
 
-  @media (max-width: 131.25em) {
-    width: 14em;
-    height: 3em;
-    font-size: 2.8em;
-  }
-  @media (max-width: 90.625em) {
-    width: 14em;
-    height: 3em;
-    font-size: 2.4em;
-  }
-  @media (max-width: 68.75em) {
-    width: 12em;
-    height: 3em;
-    font-size: 1.6em;
-  }
-
   &:hover {
     cursor: pointer;
     transform: translateY(-0.3rem);
@@ -83,16 +67,6 @@
   animation-fill-mode: backwards;
   transition: all 0.4s;
 
-  @media (max-width: 112.5em) {
-    font-size: 2rem;
-  }
-  @media (max-width: 100em) {
-    font-size: 1.6rem;
-  }
-  @media (max-width: 68.75em) {
-    font-size: 1.2rem;
-  }
-
   &:hover {
     color: $color_secondary_dark;
     transform: translateY(-0.3rem);
@@ -110,18 +84,6 @@
   border-radius: 12px;
   width: 31.4rem;
   height: 7.7rem;
-
-  @media (max-width: 1400px) {
-    width: 28rem;
-    height: 6rem;
-    font-size: 1.8rem;
-  }
-
-  @media (max-width: 900px) {
-    width: 26rem;
-    height: 5.6rem;
-    font-size: 1.6rem;
-  }
 
   &:hover,
   &:active {

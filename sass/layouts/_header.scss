@@ -12,42 +12,15 @@
   animation-fill-mode: backwards;
   transition: all 0.4s;
 
-  @media (max-width: 2100px) {
-    margin-bottom: 8.6rem;
-  }
-  @media (max-width: 1450px) {
-    margin-bottom: 4.4rem;
-  }
-  @media (max-width: 1100px) {
-    margin-bottom: 4.4rem;
-  }
   &_noMargin {
     margin-bottom: 0;
-
-    @media (max-width: 2100px) {
-      margin-bottom: 0;
-    }
-    @media (max-width: 1450px) {
-      margin-bottom: 0;
-    }
-    @media (max-width: 1100px) {
-      margin-bottom: 0;
-    }
   }
 
   .logo img {
     height: 6rem;
     width: 6rem;
-
-    @media (max-width: 1100px) {
-      height: 3.6rem;
-      width: 3.6rem;
-    }
   }
   .navigation {
-    @include respond(big-desktop) {
-      font-size: 100%;
-    }
     &_list {
       display: flex;
       align-items: center;
@@ -58,32 +31,21 @@
       margin-top: 1rem;
       margin-left: 25.6rem;
 
-      @media (max-width: 1300px) {
-        margin-left: 14.4rem;
-      }
-
       &--link {
         &-nav {
           position: absolute;
-          top: 5rem;
-          border-radius: 4px;
+          top: 8rem;
+          border-radius: 8px;
           background-color: $color_white;
           color: $color_black;
           padding: 1.6rem 2.4rem;
-          width: 18rem;
+          width: 20vw;
           box-shadow: 0 0.4rem 10px rgba($color_black, 1);
           transition: all 0.8s;
         }
       }
       &--link:last-child {
         margin-left: 22.4rem;
-
-        @media (max-width: 1100px) {
-          margin-left: 8.6rem;
-        }
-        @media (max-width: 930px) {
-          margin-left: 6.4rem;
-        }
       }
       &--link:nth-child(4) {
         position: relative;

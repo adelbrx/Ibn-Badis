@@ -1,15 +1,31 @@
 .btn-mobile-nav {
   border: none;
   background: none;
-  cursor: pointer;
-  display: none;
   align-self: center;
-}
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
-.icon-mobile-nav[name="close-outline"] {
   display: none;
+  position: absolute;
+  top: 3.6rem;
+  right: 8rem;
+  transition: all 1s;
+  z-index: 2000;
+  cursor: pointer;
+
+  .icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: $color_white;
+  }
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
+  .nav-background {
+    background-color: rgba($color: $color_primary_dark, $alpha: 0.8);
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 1s;
+  }
 }

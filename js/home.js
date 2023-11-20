@@ -96,3 +96,11 @@ document.querySelector(".registration-btn").addEventListener("click", () => {
 hide_form();
 
 ///////////////////////////////////////////////////////////////////
+//MOBILE NAVIGATION
+function mobileNavigation() {
+  document.querySelector(".btn-mobile-nav").addEventListener("click", () => {
+    document.querySelector("header").classList.toggle("nav-open");
+  });
+}
+
+mobileNavigation();

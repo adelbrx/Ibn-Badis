@@ -17,14 +17,6 @@
     color: $color_white;
     font-size: 4rem;
     font-weight: 600;
-
-    @media (max-width: 1400px) {
-      font-size: 3.6rem;
-    }
-
-    @media (max-width: 1200px) {
-      font-size: 2.8rem;
-    }
   }
   .sub-title {
     text-align: center;
@@ -32,13 +24,5 @@
     color: $color_white;
     font-size: 2.2rem;
     font-weight: 400;
-
-    @media (max-width: 1400px) {
-      font-size: 1.8rem;
-    }
-
-    @media (max-width: 1200px) {
-      font-size: 1.4rem;
-    }
   }
 }
