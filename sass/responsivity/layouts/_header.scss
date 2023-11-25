@@ -140,9 +140,15 @@
       .navigation {
         &_text {
           color: $color_primary;
+          &:hover {
+            color: $color_secondary;
+          }
         }
         &_list--link {
           color: $color_primary;
+          &:hover {
+            color: $color_secondary;
+          }
         }
       }
     }
