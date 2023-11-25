@@ -46,6 +46,9 @@
 @import "responsivity/layouts/section-foundation";
 @import "responsivity/layouts/section-registration";
 @import "responsivity/layouts/footer";
+@import "responsivity/layouts/section-schedule";
+@import "responsivity/layouts/section-presentation";
+@import "responsivity/layouts/section-moqrie";
 
 @import "responsivity/bases/typography";
 @import "responsivity/bases/utilities";
@@ -58,3 +61,4 @@
 @import "responsivity/components/registration-form";
 @import "responsivity/components/input";
 @import "responsivity/components/contact-us-form";
+@import "responsivity/components/table";

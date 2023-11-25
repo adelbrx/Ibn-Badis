@@ -4,7 +4,7 @@
   margin-left: 9.6rem;
   margin-right: 9.6rem;
   margin-top: 3.2rem;
-  margin-bottom: 14.4rem;
+  margin-bottom: 1vh;
   animation-name: moveInTop;
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
@@ -37,11 +37,12 @@
           top: 8rem;
           border-radius: 8px;
           background-color: $color_white;
-          color: $color_black;
+          color: $color_white;
           padding: 1.6rem 2.4rem;
           width: 20vw;
           box-shadow: 0 0.4rem 10px rgba($color_black, 1);
           transition: all 0.8s;
+          z-index: 100;
         }
       }
       &--link:last-child {

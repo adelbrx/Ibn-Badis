@@ -16,7 +16,6 @@
         &--link:link,
         &--link:visited {
           font-size: 3rem;
-          color: $color_primary_dark;
 
           &-nav {
             left: 5rem;
@@ -32,6 +31,13 @@
               width: 50vw;
             }
           }
+        }
+      }
+      &_text {
+        color: $color_white;
+
+        &:hover {
+          color: $color_secondary;
         }
       }
     }
@@ -61,6 +67,7 @@
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
+    color: $color_white;
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
@@ -68,6 +75,15 @@
   .nav-open .nav-background {
     height: 100vh;
     width: 100vw;
+  }
+
+  .section-schedule,
+  .section-presentation {
+    .header {
+      .btn-mobile-nav {
+        top: 1.6rem;
+      }
+    }
   }
 }
 
@@ -110,6 +126,24 @@
       }
       &_text {
         font-size: 1.1rem;
+        color: $color_white;
+
+        &:hover {
+          color: $color_secondary;
+        }
+      }
+    }
+  }
+  .section-schedule,
+  .section-presentation {
+    .header {
+      .navigation {
+        &_text {
+          color: $color_primary;
+        }
+        &_list--link {
+          color: $color_primary;
+        }
       }
     }
   }

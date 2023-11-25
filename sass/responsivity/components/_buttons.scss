@@ -5,6 +5,7 @@
         font-size: 2.2rem;
         width: 26rem;
         height: 5rem;
+        margin-top: 0;
       }
     }
   }
@@ -43,6 +44,13 @@
     font-size: 2.2rem;
     margin-right: 5.6rem;
   }
+
+  ////////////////////////
+  .btn_presentation {
+    font-size: 1.8rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -79,15 +87,31 @@
     font-size: 1rem;
     margin-right: 2.4rem;
   }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 1.4rem;
+    padding: 1.4rem 4rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  ////////////////////////
+  .btn_presentation {
+    font-size: 1rem;
+    padding: 1.2rem 3rem;
+    width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
   .section-hero {
     &_main {
       &--btn {
-        font-size: 3rem;
-        width: 30rem;
-        height: 7rem;
+        font-size: 2.2rem;
+        width: 26rem;
+        height: 5rem;
+        margin-top: 0;
       }
     }
   }
@@ -125,6 +149,13 @@
   .btn_back {
     font-size: 1rem;
   }
+
+  ////////////////////////
+  .btn_presentation {
+    font-size: 1.8rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -134,6 +165,7 @@
         font-size: 3.2rem;
         width: 32rem;
         height: 8rem;
+        border-radius: 50px;
       }
     }
   }
@@ -171,6 +203,12 @@
   .btn_back {
     font-size: 1rem;
   }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 1.8rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1350px) {
@@ -205,6 +243,13 @@
 
   .btn_back {
     font-size: 1.2rem;
+  }
+
+  ////////////////////////
+  .btn_presentation {
+    font-size: 2rem;
+    padding: 1.8rem 4rem;
+    width: 50%;
   }
 }
 
@@ -252,6 +297,18 @@
   .btn_back {
     font-size: 1.4rem;
   }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 2.2rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
+  }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 2.2rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -283,6 +340,12 @@
 
   .btn_back {
     font-size: 1.8rem;
+  }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 2.2rem;
+    padding: 1.8rem 6rem;
+    width: 50%;
   }
 }
 @media (min-width: 2400px) {
@@ -328,13 +391,18 @@
   .btn_back {
     font-size: 2.4rem;
   }
+  ////////////////////////
+  .btn_presentation {
+    font-size: 2.8rem;
+    padding: 2.4rem 12rem;
+    width: 50%;
+  }
 }
 
 @media (min-width: 2800px) {
   .section-hero {
     &_main {
       &--btn {
-        margin-top: 6rem;
         font-size: 8.6rem;
         width: 86rem;
         height: 18rem;
@@ -363,6 +431,11 @@
 
   .btn_back {
     font-size: 2.8rem;
+  }
+  .btn_presentation {
+    font-size: 3.2rem;
+    padding: 2.8rem 16rem;
+    width: 50%;
   }
 }
 

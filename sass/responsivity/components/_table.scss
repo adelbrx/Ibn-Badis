@@ -1,0 +1,272 @@
+@media (max-width: 900px) {
+  table {
+    margin: 0 3.2rem;
+    margin-top: 9.6rem;
+
+    thead {
+      th {
+        width: 5.6rem;
+        height: 2.4rem;
+        font-size: 0.64rem;
+
+        &:first-child {
+          width: 10rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 5.4rem;
+          height: 2.4rem;
+          font-size: 0.96rem;
+        }
+        td {
+          width: 5.6rem;
+          height: 2.4rem;
+          font-size: 0.64rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    transform: rotate(90deg);
+    margin: 0 auto;
+    margin-top: 9.6rem;
+
+    thead {
+      th {
+        width: 16rem;
+        height: 4.8rem;
+        font-size: 0.96rem;
+
+        &:first-child {
+          width: 18rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 16rem;
+          height: 4.8rem;
+          font-size: 1.2rem;
+        }
+        td {
+          width: 16rem;
+          height: 4.8rem;
+          font-size: 0.96rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  table {
+    margin: 0 auto;
+    margin-top: 9.6rem;
+
+    thead {
+      th {
+        width: 7.4rem;
+        height: 4.8rem;
+        font-size: 0.96rem;
+
+        &:first-child {
+          width: 18rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 7.4rem;
+          height: 4.8rem;
+          font-size: 1.2rem;
+        }
+        td {
+          width: 7.4rem;
+          height: 4.8rem;
+          font-size: 0.96rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  table {
+    margin: 0 auto;
+    margin-top: 12.4rem;
+
+    thead {
+      th {
+        width: 8.6rem;
+        height: 4.8rem;
+        font-size: 1rem;
+
+        &:first-child {
+          width: 18rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 8.6rem;
+          height: 4.8rem;
+          font-size: 1.4rem;
+        }
+        td {
+          width: 8.6rem;
+          height: 4.8rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  table {
+    margin: 0 auto;
+    margin-top: 8.4rem;
+
+    thead {
+      th {
+        width: 12rem;
+        height: 5.6rem;
+        font-size: 1.2rem;
+
+        &:first-child {
+          width: 18rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 12rem;
+          height: 5.6rem;
+          font-size: 2rem;
+        }
+        td {
+          width: 12rem;
+          height: 5.6rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  table {
+    margin: 0 auto;
+    margin-top: 8.4rem;
+
+    thead {
+      th {
+        width: 15rem;
+        height: 5.6rem;
+        font-size: 1.2rem;
+
+        &:first-child {
+          width: 23rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 23rem;
+          height: 5.6rem;
+          font-size: 2rem;
+        }
+        td {
+          width: 15rem;
+          height: 5.6rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2400px) {
+  table {
+    margin: 0 auto;
+    margin-top: 8.4rem;
+
+    thead {
+      th {
+        width: 21rem;
+        height: 7.2rem;
+        font-size: 1.8rem;
+
+        &:first-child {
+          width: 28rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 28rem;
+          height: 5.6rem;
+          font-size: 2rem;
+        }
+        td {
+          width: 15rem;
+          height: 7.2rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2800px) {
+  table {
+    margin: 0 auto;
+    margin-top: 8.4rem;
+
+    thead {
+      th {
+        width: 25rem;
+        height: 7.2rem;
+        font-size: 1.8rem;
+
+        &:first-child {
+          width: 28rem;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        th {
+          width: 28rem;
+          height: 5.6rem;
+          font-size: 2rem;
+        }
+        td {
+          width: 15rem;
+          height: 7.2rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

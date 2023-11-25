@@ -17,6 +17,7 @@
   }
   .icon-mobile-nav[name="close-outline"] {
     display: none;
+    color: $color_white;
   }
 
   .nav-background {
@@ -27,5 +28,45 @@
     top: 0;
     right: 0;
     transition: all 1s;
+  }
+}
+
+.section-schedule {
+  .btn-mobile-nav {
+    .icon-mobile-nav {
+      color: $color_primary_dark;
+      display: inline-block;
+
+      &[name="close-outline"] {
+        display: none;
+        color: $color_white;
+      }
+    }
+  }
+}
+.section-moqrie {
+  .btn-mobile-nav {
+    .icon-mobile-nav {
+      color: $color_primary_dark;
+      display: inline-block;
+
+      &[name="close-outline"] {
+        display: none;
+        color: $color_white;
+      }
+    }
+  }
+}
+.section-presentation {
+  .btn-mobile-nav {
+    .icon-mobile-nav {
+      color: $color_primary_dark;
+      display: inline-block;
+
+      &[name="close-outline"] {
+        display: none;
+        color: $color_white;
+      }
+    }
   }
 }

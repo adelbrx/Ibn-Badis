@@ -1,0 +1,100 @@
+@media (max-width: 1100px) {
+  .inputs {
+    width: 100%;
+    .moqrie {
+      &_form {
+        &--items {
+          row-gap: 2.4vw;
+          column-gap: 14vw;
+          grid-template-columns: repeat(2, 1fr);
+
+          .input {
+            &_label {
+              font-size: 1.4vw;
+              color: $color_black;
+            }
+            &_content {
+              margin-top: 1vw;
+              position: relative;
+              width: 30vw;
+
+              &--item {
+                border-radius: 2px;
+                background-color: $color_grey_light;
+                border: none;
+                padding: 2vw 3.6vw;
+                width: 30vw;
+                &::placeholder {
+                  color: rgba($color: $color_black, $alpha: 0.5);
+                  font-size: 1.2vw;
+                }
+                &:focus,
+                &:active {
+                  outline: 1px solid $color_primary;
+                  box-shadow: 0 0 4px $color_primary;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .player {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 8.6vw;
+    .first_part {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20vw;
+      margin-right: 7.5vw;
+
+      img {
+        height: 3.6vw;
+        width: 3.6vw;
+        cursor: pointer;
+      }
+    }
+    .second_part {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5.6vw;
+      margin-top: 4vw;
+      h6 {
+        font-size: 1.4vw;
+        font-weight: 400;
+        color: $color_grey_dark;
+      }
+      .line {
+        width: 50vw;
+        &_grey {
+          width: 100%;
+          border-bottom: 0.5vw solid $color_grey_light;
+          border-radius: 0.4vw;
+        }
+        &_red {
+          transform: translateY(100%);
+          &--line {
+            width: 50%;
+            border-bottom: 0.5vw solid $color_secondary;
+            border-radius: 0.4vw;
+            box-shadow: 0 0 12px rgba($color: $color_secondary, $alpha: 1);
+          }
+          &--circle {
+            position: absolute;
+            background-color: $color_secondary;
+            height: 1.8vw;
+            width: 1.8vw;
+            border: 3px solid $color_secondary;
+            border-radius: 100%;
+            transform: translateY(-40%);
+            box-shadow: 0 0 1vw rgba($color: $color_secondary, $alpha: 1);
+          }
+        }
+      }
+    }
+  }
+}

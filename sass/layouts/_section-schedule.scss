@@ -28,20 +28,12 @@
         height: 2.2rem;
         width: 1.8rem;
         opacity: 50%;
-
-        // &:nth-child(1) {
-        //   opacity: 100%;
-        // }
       }
 
       &--text {
         font-size: 1.6rem;
         color: rgba($color_grey_dark, 0.5);
         font-weight: 600;
-
-        // &:nth-child(2) {
-        //   color: rgba($color_grey_dark, 1);
-        // }
       }
 
       &:hover {
