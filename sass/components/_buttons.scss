@@ -86,8 +86,7 @@
   width: 31.4rem;
   height: 7.7rem;
 
-  &:hover,
-  &:active {
+  &:hover {
     cursor: pointer;
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color_black, 0.2);

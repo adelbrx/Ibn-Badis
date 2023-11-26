@@ -98,8 +98,25 @@ hide_form();
 ///////////////////////////////////////////////////////////////////
 //MOBILE NAVIGATION
 function mobileNavigation() {
-  document.querySelector("ion-icon").addEventListener("click", () => {
+  let menus = document.querySelectorAll("ion-icon");
+  document.querySelector(".btn-mobile-nav").addEventListener("click", () => {
     document.querySelector("header").classList.toggle("nav-open");
+
+    if (document.querySelector("header").classList.contains("nav-open")) {
+      menus[1].style.display = "inline-block";
+    } else {
+      menus[1].style.display = "none";
+    }
+  });
+
+  document.querySelector(".navigation").addEventListener("click", () => {
+    document.querySelector("header").classList.toggle("nav-open");
+
+    if (document.querySelector("header").classList.contains("nav-open")) {
+      menus[1].style.display = "inline-block";
+    } else {
+      menus[1].style.display = "none";
+    }
   });
 }
 
