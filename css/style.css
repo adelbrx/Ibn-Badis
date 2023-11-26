@@ -101,7 +101,8 @@
   border-radius: 4px;
   padding: 2rem 3.2rem;
   margin-top: 4.4rem;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .registration-btn--green:hover, .registration-btn--green:active {
     cursor: pointer;
     transform: translateY(-0.3rem);
@@ -120,7 +121,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 4px;
     position: absolute;
     top: 0;
     left: 0;
@@ -709,6 +710,9 @@ html {
 .nav-open {
   display: block; }
 
+.no-display {
+  display: none; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -1267,7 +1271,17 @@ footer {
 @media (max-width: 900px) {
   .section-who {
     padding: 5.6rem 0;
-    margin: 0 5.2rem; } }
+    margin: 0 5.2rem; }
+  .container-1 {
+    display: flex; }
+  .container-2 {
+    display: none; } }
+
+@media (max-width: 700px) {
+  .container-1 {
+    display: none; }
+  .container-2 {
+    display: flex; } }
 
 @media (max-width: 600px) {
   .section-who {
@@ -1277,7 +1291,11 @@ footer {
 @media (min-width: 900px) {
   .section-who {
     padding: 6.4rem 0;
-    margin: 0 6rem; } }
+    margin: 0 6rem; }
+  .container-1 {
+    display: flex; }
+  .container-2 {
+    display: none; } }
 
 @media (min-width: 1100px) {
   .section-who {
@@ -1307,7 +1325,7 @@ footer {
 @media (max-width: 700px) {
   .row_container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between; } }
 
 @media (max-width: 900px) {
@@ -2426,16 +2444,21 @@ footer {
     font-size: 1.4rem;
     margin-bottom: 4.4rem; }
   .step-number {
-    font-size: 6.4rem; }
+    font-size: 6.4rem;
+    margin: 0 auto;
+    text-align: center; }
   .heading_secondary {
     font-size: 1.4rem;
     margin-bottom: 2rem;
-    width: 75vw; }
+    width: 75vw;
+    text-align: center; }
   .step-description {
-    font-size: 0.86rem;
+    font-size: 1rem;
     line-height: 1.6rem;
-    width: 80vw;
-    margin-bottom: 5rem; } }
+    width: 70vw;
+    margin-bottom: 5rem;
+    text-align: center;
+    margin: 0 auto; } }
 
 @media (min-width: 900px) {
   .heading_primary_hero {
@@ -2615,6 +2638,13 @@ footer {
   .btn_link--testimonials {
     font-size: 1rem;
     margin-top: 2.2rem; }
+  .registration-btn {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 16); }
+    .registration-btn::after {
+      border-radius: 4px; }
   .contact-us_btn {
     position: absolute;
     top: 6.4rem;

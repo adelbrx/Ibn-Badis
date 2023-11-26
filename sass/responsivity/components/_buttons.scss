@@ -68,6 +68,17 @@
     font-size: 1rem;
     margin-top: 2.2rem;
   }
+  /////////////////////////
+  .registration-btn {
+    font-size: 1.2rem;
+    border-radius: 4px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 16);
+
+    &::after {
+      border-radius: 4px;
+    }
+  }
   ////////////////////////
   .contact-us_btn {
     position: absolute;

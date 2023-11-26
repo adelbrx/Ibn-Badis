@@ -65,18 +65,23 @@
   ///////////////////////////////
   .step-number {
     font-size: 6.4rem;
+    margin: 0 auto;
+    text-align: center;
   }
   .heading_secondary {
     font-size: 1.4rem;
     margin-bottom: 2rem;
     width: 75vw;
+    text-align: center;
   }
 
   .step-description {
-    font-size: 0.86rem;
+    font-size: 1rem;
     line-height: 1.6rem;
-    width: 80vw;
+    width: 70vw;
     margin-bottom: 5rem;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
