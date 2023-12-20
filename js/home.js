@@ -120,6 +120,54 @@ function mobileNavigation() {
   });
 }
 
-mobileNavigation();
+////////////////////////////////////////////////////////////////////////
+//REGISTRATION
+document.getElementById("sendMail").addEventListener("click", function () {
+  const forms = document.querySelectorAll(".input_content--item");
+  const first_name = forms[0].value;
+  const last_name = forms[1].value;
+  const birth_day = forms[2].value;
+  const sexe = forms[3].value;
+  const street = forms[4].value;
+  const code_postal = forms[5].value;
+  const city = forms[6].value;
+  const email = forms[7].value;
+  const phone = forms[8].value;
+  const school = forms[9].value;
+  const school_place = forms[10].value;
+  const school_type = forms[11].value;
+  const level = forms[12].value;
 
-///////////////////////////////////////////////////////////////////////////////////
+  const data = {
+    firstName: first_name,
+    lastName: last_name,
+    birthDay: birth_day,
+    sexe: sexe,
+    street: street,
+    codePostal: code_postal,
+    city: city,
+    email: email,
+    phone: phone,
+    school: school,
+    schoolPlace: school_place,
+    schoolType: school_type,
+    level: level,
+  };
+
+  console.log(data);
+
+  fetch("http://localhost:3000/send-email", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      email: "adelbereksi1@gmail.com",
+      subject: "New Registration",
+      message: JSON.stringify(data),
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error("Error:", error));
+});
