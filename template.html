@@ -1,8 +1,4 @@
-////////////////////////////////////////////////////////////////////////
-//Contact us
-
-function buildHTMLTemplateMessage(data) {
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,9 +12,9 @@ function buildHTMLTemplateMessage(data) {
   <body>
     <header>
       <div class="logo">
-        <img src="https://drive.google.com/file/d/1SJej1X4wx_fLsONLmx0wIF3R8dt46p9m/view?usp=drive_link" alt="logo" />
+        <img src="img/madrassa/ibs_icon_white_writed.png" alt="logo" />
       </div>
-      <div class="titre">New message</div>
+      <div class="titre">New registration</div>
       <style>
         header {
           background-color: #115e59;
@@ -44,20 +40,56 @@ function buildHTMLTemplateMessage(data) {
       <table>
         <tbody width="50vw">
           <tr>
-            <td>Name</td>
-            <td>${data.name}</td>
+            <td>First Name</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Birth Day</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Street</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Postal Code</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>a</td>
           </tr>
           <tr>
             <td>Email</td>
-            <td>${data.email}</td>
+            <td>a</td>
           </tr>
           <tr>
-            <td>Phone number</td>
-            <td>${data.phone}</td>
+            <td>Phone</td>
+            <td>a</td>
           </tr>
           <tr>
-            <td>Message</td>
-            <td>${data.message}</td>
+            <td>School Name</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>School Location</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>School Type</td>
+            <td>a</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>a</td>
           </tr>
         </tbody>
       </table>
@@ -83,39 +115,3 @@ function buildHTMLTemplateMessage(data) {
     </style>
   </body>
 </html>
-`;
-}
-
-document
-  .getElementById("btn_contact-us")
-  .addEventListener("click", function () {
-    const forms = document.querySelectorAll(".item_input");
-    const name = forms[0].value;
-    const email = forms[1].value;
-    const phone = forms[2].value;
-    const message = forms[3].value;
-
-    const data = {
-      name: name,
-      email: email,
-      phone: phone,
-      message: message,
-    };
-
-    console.log(data);
-
-    fetch("http://localhost:3000/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: "adelbereksi1@gmail.com",
-        subject: "New Contact",
-        message: buildHTMLTemplateMessage(data),
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error("Error:", error));
-  });

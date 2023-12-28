@@ -16,8 +16,12 @@
       border-radius: 4px;
       background-color: $color_grey_light;
       border: none;
+      padding: auto auto;
       padding: 2.4rem 3.2rem;
       padding-right: 7rem;
+      -webkit-appearance: none;
+      -moz-appearance: textfield;
+
       &::placeholder {
         color: rgba($color: $color_black, $alpha: 0.5);
         font-size: 1.4rem;
@@ -26,7 +30,18 @@
       &:active {
         outline: 2px solid $color_primary;
         box-shadow: 0 0 8px $color_primary;
+
+        &:invalid {
+          outline: 2px solid $color_secondary;
+          box-shadow: 0 0 16px $color_secondary;
+        }
       }
+    }
+
+    select {
+      box-sizing: border-box;
+      width: 100%;
+      padding-left: 1rem;
     }
 
     &--icon {

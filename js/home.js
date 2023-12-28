@@ -122,6 +122,127 @@ function mobileNavigation() {
 
 ////////////////////////////////////////////////////////////////////////
 //REGISTRATION
+function buildHTMLTemplateRegistration(data) {
+  return `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lilita+One&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://drive.google.com/file/d/1SJej1X4wx_fLsONLmx0wIF3R8dt46p9m/view?usp=drive_link" alt="logo" />
+      </div>
+      <div class="titre">New registration</div>
+      <style>
+        header {
+          background-color: #115e59;
+          /* font-family: "Noto Kufi Arabic", sans-serif; */
+          color: aliceblue;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          gap: 1vw;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        .logo img {
+          height: 4vw;
+          width: 5vw;
+        }
+      </style>
+    </header>
+    <main>
+      <table>
+        <tbody width="50vw">
+          <tr>
+            <td>First Name</td>
+            <td>${data.firstName}</td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td>${data.lastName}</td>
+          </tr>
+          <tr>
+            <td>Birth Day</td>
+            <td>${data.birthDay}</td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>${data.sexe}</td>
+          </tr>
+          <tr>
+            <td>Street</td>
+            <td>${data.street}</td>
+          </tr>
+          <tr>
+            <td>Postal Code</td>
+            <td>${data.codePostal}</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>${data.city}</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>${data.email}</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>${data.phone}</td>
+          </tr>
+          <tr>
+            <td>School Name</td>
+            <td>${data.school}</td>
+          </tr>
+          <tr>
+            <td>School Location</td>
+            <td>${data.schoolPlace}</td>
+          </tr>
+          <tr>
+            <td>School Type</td>
+            <td>${data.schoolType}</td>
+          </tr>
+          <tr>
+            <td>Level</td>
+            <td>${data.level}</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      main table {
+        margin-top: 4rem;
+        border: 2px;
+      }
+
+      main table tbody td {
+        width: 30vw;
+        height: 3.2rem;
+      }
+    </style>
+  </body>
+</html>
+`;
+}
+
 document.getElementById("sendMail").addEventListener("click", function () {
   const forms = document.querySelectorAll(".input_content--item");
   const first_name = forms[0].value;
@@ -164,7 +285,7 @@ document.getElementById("sendMail").addEventListener("click", function () {
     body: JSON.stringify({
       email: "adelbereksi1@gmail.com",
       subject: "New Registration",
-      message: JSON.stringify(data),
+      message: buildHTMLTemplateRegistration(data),
     }),
   })
     .then((response) => response.json())
