@@ -356,11 +356,11 @@
   justify-content: center;
   align-items: center; }
   .dialog_chatbox {
-    display: block;
-    background-color: #fff;
-    box-shadow: 0 0 24px rgba(255, 255, 255, 0.7);
-    height: 70vh;
-    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    height: 50vh;
+    width: 50vw;
     border-radius: 12px;
     z-index: 99;
     transition: all 0.8s; }
@@ -370,6 +370,26 @@
       position: absolute;
       top: 0;
       left: 0; }
+    .dialog_chatbox--text {
+      display: inline-block;
+      border-radius: 1rem;
+      padding: 0.8rem 1.6vw;
+      margin: 1rem;
+      color: #115e59;
+      font-family: "Noto Kufi Arabic", sans-serif;
+      font-size: 1.6rem;
+      background-color: #fff;
+      box-shadow: 0 0 24px rgba(255, 255, 255, 0.7);
+      animation-name: moveInLeft;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-out;
+      animation-delay: 0.25s;
+      animation-fill-mode: backwards;
+      transition: all 0.4s; }
+      .dialog_chatbox--text:hover {
+        color: #115e59;
+        transform: translateY(-0.3rem);
+        cursor: pointer; }
 
 .btn-mobile-nav {
   border: none;

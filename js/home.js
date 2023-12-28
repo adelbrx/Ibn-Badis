@@ -63,6 +63,102 @@ set_gap_navigation_list();
 function display_chatbox() {
   document.querySelector(".robot").addEventListener("click", () => {
     document.querySelector(".dialog").classList.toggle("invisible");
+    document.querySelector(".dialog_chatbox").innerHTML = "";
+    document.querySelector(
+      ".dialog_chatbox"
+    ).innerHTML = ` <div class="dialog_chatbox--message dialog_chatbox--text">
+          من تكون جمعية ابن باديس ؟
+        </div>
+        <div class="dialog_chatbox--proposition dialog_chatbox--text">
+          مواد الدراسية
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          أيام دوام المدرسة في الأسبوع
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          تواريخ المداومة في مدرسة ابن باديس
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          اين تقع المدرسة ؟
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          الرسوم السنوية في مدرسة ابن باديس
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          رابط التسجيل
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+          كيف يمكنني التواصل مع ادارة المدرسة ؟
+        </div>`;
+
+    const questions = document.querySelectorAll(".dialog_chatbox--text");
+    questions[0].addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      document.querySelector("#who").scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[1].addEventListener("click", () => {
+      document.querySelector(".dialog_chatbox").innerHTML = "";
+      document.querySelector(
+        ".dialog_chatbox"
+      ).innerHTML = ` <div class="dialog_chatbox--message dialog_chatbox--text">
+          لغة عربية 
+        </div>
+        <div class="dialog_chatbox--proposition dialog_chatbox--text">
+          قرآن 
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+           تربية حضارية 
+        </div>
+        <div class="dialog_chatbox--answer dialog_chatbox--text">
+           نشاطات تربوية  
+        </div>
+        `;
+    });
+    questions[2].addEventListener("click", () => {
+      document.querySelector(".dialog_chatbox").innerHTML = "";
+      document.querySelector(
+        ".dialog_chatbox"
+      ).innerHTML = ` <div class="dialog_chatbox--message dialog_chatbox--text">
+يوم السبت        </div>`;
+      //document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[3].addEventListener("click", () => {
+      window.open("../schedule.html", "_self");
+      document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[4].addEventListener("click", () => {
+      window.open(
+        "https://www.google.com/maps/place/Bahnstrasse+80,+8105+Regensdorf,+Suisse/@47.4436528,8.4497314,15z/data=!3m1!4b1!4m6!3m5!1s0x47900caf2d5a12c5:0x897e2fe7d2439893!8m2!3d47.4436387!4d8.4600312!16s%2Fg%2F11bw4hy6c_?entry=ttu",
+        "_self"
+      );
+      document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[5].addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      document.querySelector("#who").scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[6].addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      document
+        .querySelector("#registration")
+        .scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".dialog").classList.add("invisible");
+    });
+    questions[7].addEventListener("click", () => {
+      window.open("../contact-us.html", "_self");
+      document.querySelector(".dialog").classList.add("invisible");
+    });
   });
 
   document
