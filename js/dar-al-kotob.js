@@ -82,3 +82,12 @@ function mobileNavigation() {
 }
 
 mobileNavigation();
+
+///////////////////////////////////////////////////////////
+// translation
+// document.querySelectorAll(".arabic").forEach((element) => {
+//   element.classList.toggle("no-display");
+// });
+// document.querySelectorAll(".deutch").forEach((element) => {
+//   element.classList.toggle("no-display");
+// });

@@ -67,29 +67,52 @@ function display_chatbox() {
     document.querySelector(
       ".dialog_chatbox"
     ).innerHTML = ` <div class="dialog_chatbox--message dialog_chatbox--text">
-          من تكون جمعية ابن باديس ؟
+          <div class="arabic">من تكون جمعية ابن باديس ؟</div>
+          <div class="deutch no-display">
+            Wer ist die Ibn-Badis-Vereinigung?
+          </div>
         </div>
         <div class="dialog_chatbox--proposition dialog_chatbox--text">
-          مواد الدراسية
+          <div class="arabic">مواد الدراسية</div>
+          <div class="deutch no-display">Lernmaterialien</div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          أيام دوام المدرسة في الأسبوع
+          <div class="arabic">أيام دوام المدرسة في الأسبوع</div>
+          <div class="deutch no-display">Schultage pro Woche</div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          تواريخ المداومة في مدرسة ابن باديس
+          <div class="arabic">تواريخ المداومة في مدرسة ابن باديس</div>
+          <div class="deutch no-display">
+            Anmeldetermine an der Ibn Badis Schule
+          </div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          اين تقع المدرسة ؟
+          <div class="arabic">اين تقع المدرسة ؟</div>
+          <div class="deutch no-display">Wo befindet sich die Schule?</div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          الرسوم السنوية في مدرسة ابن باديس
+          <div class="arabic">الرسوم السنوية في مدرسة ابن باديس</div>
+          <div class="deutch no-display">
+            Jahresgebühren an der Ibn Badis Schule
+          </div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          رابط التسجيل
+          <div class="arabic">رابط التسجيل</div>
+          <div class="deutch no-display">Registrierungslink</div>
         </div>
         <div class="dialog_chatbox--answer dialog_chatbox--text">
-          كيف يمكنني التواصل مع ادارة المدرسة ؟
+          <div class="arabic">كيف يمكنني التواصل مع ادارة المدرسة ؟</div>
+          <div class="deutch no-display">
+            Wie kann ich die Schulleitung kontaktieren?
+          </div>
         </div>`;
+
+    // document.querySelectorAll(".arabic").forEach((element) => {
+    //   element.classList.toggle("no-display");
+    // });
+    // document.querySelectorAll(".deutch").forEach((element) => {
+    //   element.classList.toggle("no-display");
+    // });
 
     const questions = document.querySelectorAll(".dialog_chatbox--text");
     questions[0].addEventListener("click", () => {
@@ -388,3 +411,12 @@ document.getElementById("sendMail").addEventListener("click", function () {
     .then((data) => console.log(data))
     .catch((error) => console.error("Error:", error));
 });
+
+///////////////////////////////////////////////////////////
+//translate
+// document.querySelectorAll(".arabic").forEach((element) => {
+//   element.classList.toggle("no-display");
+// });
+// document.querySelectorAll(".deutch").forEach((element) => {
+//   element.classList.toggle("no-display");
+// });

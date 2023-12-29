@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traduction de site</title>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      // Chargement de l'API de Google Translate
+      google.load("language", "1");
+
+      function translateText() {
+        // Clé d'API Google Translate
+        var apiKey = "VOTRE_CLE_API";
+
+        // Texte à traduire
+        var textToTranslate = document.getElementById("textToTranslate").value;
+
+        // Langue cible
+        var targetLanguage = document.getElementById("targetLanguage").value;
+
+        // Appel à l'API de Google Translate
+        var url =
+          "https://translation.googleapis.com/language/translate/v2?key=" +
+          apiKey +
+          "&q=" +
+          encodeURIComponent(textToTranslate) +
+          "&target=" +
+          targetLanguage;
+
+        fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // Récupérer la traduction
+            var translation = data.data.translations[0].translatedText;
+
+            // Afficher la traduction
+            document.getElementById("translatedText").innerHTML = translation;
+          })
+          .catch((error) => console.error("Erreur:", error));
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Traduction de site</h1>
+
+    <label for="textToTranslate">Texte à traduire:</label>
+    <textarea id="textToTranslate" rows="4" cols="50"></textarea>
+
+    <br />
+
+    <label for="targetLanguage">Langue cible:</label>
+    <input type="text" id="targetLanguage" value="fr" />
+
+    <br />
+
+    <button onclick="translateText()">Traduire</button>
+
+    <br />
+
+    <h2>Résultat:</h2>
+    <div id="translatedText"></div>
+  </body>
+</html>
